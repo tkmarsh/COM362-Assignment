@@ -1,4 +1,5 @@
 #include "Aircraft.h"
+#include <string>
 #include <vector>
 #pragma once
 class FlightSystem{
@@ -9,6 +10,7 @@ public:
 		int groundspeed, int altitude, std::string gridReference, int heading);
 	std::vector<Aircraft> ListAircraft();
 	std::vector<Aircraft> ListAllCruisingAircraft();
+	std::vector<Aircraft> returnedAircraft_;
 	void RemoveAircraft(std::string flightNumber);
 	void ChangeHeading(std::string flightNumber, int heading);
 	int GetHeading(std::string flightNumber);
