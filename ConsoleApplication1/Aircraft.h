@@ -1,4 +1,5 @@
 #include <string>
+#pragma once
 class Aircraft{
 public:
 	Aircraft(std::string flightNumber, std::string airline, std::string aircraftType,
@@ -12,7 +13,7 @@ public:
 	void SetGroundSpeed(int groundSpeed);
 	int GetGroundSpeed();
 	void SetAltitude(int altitude);
-	int GetAltitude();
+	int GetAltitude() const;
 	void SetGridReference(std::string gridReference);
 	std::string GetGridReference();
 	void SetHeading(int heading);

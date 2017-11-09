@@ -48,7 +48,7 @@ int Aircraft::GetGroundSpeed(){
 void Aircraft::SetAltitude(int altitude) {
 	altitude_ = altitude;
 }
-int Aircraft::GetAltitude() {
+int Aircraft::GetAltitude() const{
 	return altitude_;
 }
 void Aircraft::SetGridReference(std::string gridReference) {

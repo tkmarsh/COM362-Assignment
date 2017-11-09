@@ -15,7 +15,7 @@ std::vector<Aircraft> FlightSystem::ListAircraft() {
 
 std::vector<Aircraft> FlightSystem::ListAllCruisingAircraft() {
 	for (int index = 0; index < aircraftList_.size(); index++) {
-		if (aircraftList_.at(index).GetAltitude >=30000) {
+		if (aircraftList_.at(index).GetAltitude() >=30000) {
 			returnedAircraft_.push_back(aircraftList_.at(index));
 		}
 	}
@@ -40,7 +40,7 @@ void FlightSystem::ChangeHeading(std::string flightNumber, int heading) {
 int FlightSystem::GetHeading(std::string flightNumber) {
 	for (int index = 0; index < aircraftList_.size(); index++) {
 		if (aircraftList_.at(index).GetFlightNumber() == flightNumber) {
-			return aircraftList_.at(index).GetHeading;
+			return aircraftList_.at(index).GetHeading();
 		}
 	}
 }
@@ -56,7 +56,7 @@ void FlightSystem::ChangeAltitude(std::string flightNumber,int altitude){
 int FlightSystem::GetAltitude(std::string flightNumber) {
 	for (int index = 0; index < aircraftList_.size(); index++) {
 		if (aircraftList_.at(index).GetFlightNumber() == flightNumber) {
-			return aircraftList_.at(index).GetAltitude;
+			return aircraftList_.at(index).GetAltitude();
 		}
 	}
 }
