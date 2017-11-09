@@ -5,19 +5,19 @@ public:
 	Aircraft(std::string flightNumber, std::string airline, std::string aircraftType,
 		int groundspeed, int altitude, std::string gridReference, int heading);
 	void SetFlightNumber(std::string flightNumber);
-	std::string GetFlightNumber();
+	std::string GetFlightNumber() const;
 	void SetAirline(std::string airline);
-	std::string GetAirline();
+	std::string GetAirline() const;
 	void SetAircraftType(std::string aircraftType);
-	std::string GetAircraftType();
+	std::string GetAircraftType() const;
 	void SetGroundSpeed(int groundSpeed);
-	int GetGroundSpeed();
+	int GetGroundSpeed() const;
 	void SetAltitude(int altitude);
 	int GetAltitude() const;
 	void SetGridReference(std::string gridReference);
 	std::string GetGridReference();
 	void SetHeading(int heading);
-	int GetHeading();
+	int GetHeading() const;
 
 private:
 	std::string flightNumber_;
